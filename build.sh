@@ -6,11 +6,11 @@
 # Aufruf:   ./build.sh          bauen
 #           ./build.sh clean    Bauordner löschen und neu bauen
 #
-# Das Ergebnis landet in ../dist/stransball2.uf2
+# Das Ergebnis landet in dist/stransball2.uf2
 #
 set -uo pipefail
 HIER="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-. "${HIER}/../tools/pbc_build.sh"
+. "${HIER}/tools/pbc_build.sh"
 
 [ "${1:-}" = clean ] && rm -rf "${HIER}/build"
 

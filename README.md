@@ -35,7 +35,7 @@ Waffe), V-PANTHER 2 (ausgewogen), X-TERMINATOR (starke Waffe, träge).
 Am einfachsten:
 
 ```bash
-./build.sh          # baut und legt die .uf2 in ../dist/ ab
+./build.sh          # baut und legt die .uf2 in dist/ ab
 ./build.sh clean    # Bauordner vorher löschen
 ```
 
@@ -85,3 +85,10 @@ src/game.c          Spiellogik, Kollision und Renderer, plattformfrei
 src/pbc/            Gerät: ST7789, Tasten, PWM/DMA-Ton, Flash, LEDs, Panikbild
 doc/PORT.md         was gegenüber der Vorlage geändert wurde und warum
 ```
+
+## Herkunft und Download
+
+Teil der Sammlung für den PicoBoy Color Plus; Übersicht und
+Hardware-Referenz: [pbc-plus](https://github.com/hcl1981/pbc-plus). Die fertige Firmware
+(stransball2.uf2) liegt unter **Releases**. `./build.sh` baut nach `dist/`;
+Werkzeuge und SDK siehe [`docs/BAUEN.md`](docs/BAUEN.md).
